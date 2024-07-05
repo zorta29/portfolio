@@ -1,0 +1,283 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+  }
+
+  nav{
+    background-color: transparent;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    margin-top: 15px;
+    top: 0;
+    z-index: 1;
+  }
+
+  nav ul{
+    display: flex;
+  }
+  nav ul li a{
+   color: red;
+   font-weight: bolder;
+   margin: 20px;
+   text-decoration: none;
+   text-shadow: 2px 4px 6px rgb(222, 88, 40);
+
+  }
+
+  nav ul li a:hover{
+    text-shadow:2px 4px 6px rgb(14, 8, 105) ;
+    color: blue
+  }
+
+  video{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .overlay{
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    color: rgb(249, 244, 244);
+  }
+
+  h1:hover{
+    text-shadow: 2px 4px 6px rgb(232, 94, 15);
+    text-decoration: underline;
+  }
+
+  span{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
+
+  #home{
+   display: flex;
+   flex-direction: column;
+   height: 800px;
+   
+  }
+
+  #home::before{
+    content: "";
+    background-image: url(https://bairesdev.mo.cloudinary.net/blog/2022/08/portrait-of-a-man-using-a-computer-in-a-modern-office-picture-id1344688156-1.jpg?tx=w_1920,q_auto);  
+    background-size: cover; 
+    height: 100%;
+  }
+
+ .main{
+  border: 3px inset rgb(65, 63, 65);
+  padding: 25px;
+  margin-top: 20px;
+  display: flex;
+  position: absolute;
+  top: 125%;
+    left: 38%;
+  box-shadow: 2px 4px 6px rgb(11, 14, 5);
+ }
+
+ .main:hover{
+  scale: 1.05;
+  background-color: rgba(251, 249, 255, 0.403);
+ }
+
+ .pic{
+  display: flex;
+ }
+ .pic img{
+  width: 400px;
+ }
+
+ .pic h4{
+  text-align: center;
+  color: brown;
+  font-size: 30px;
+  font-style: italic;
+ }
+
+ .pic p{
+  text-align: justify;
+  padding: 10px;
+  font-style: italic;
+ }
+
+ h3{
+  text-align: center;
+  background-color: cyan;
+  color: slateblue;
+  margin-top: 5px;
+  margin: 10px;
+ }
+
+ .gallery{
+  border: 5px ridge rgb(231, 108, 108);
+  margin: 2px;
+  margin-top: 5px;
+  box-shadow: 2px 4px 6px rgb(35, 5, 35);
+ }
+
+ .gallery img{
+width:450px ;
+margin-left: 43px;
+padding:20px;
+cursor: pointer;
+ }
+
+ .gallery img:hover{
+  box-shadow:2px 4px 6px rgb(99, 4, 99) ;
+  scale: 1.06;
+ }
+
+ .row{
+  background-color: beige;
+  display: flex;
+ height: 700px;
+ margin-top: 10px;
+ }
+
+ .box{
+  border: 2px inset blueviolet;
+  height: 600px;
+  margin: 10px;
+  padding: 10px;
+  background: linear-gradient(to top,rgba(232, 232, 134, 0.599) 50%,rgb(78, 182, 238) 50%);
+  background-size: 100% 200%;
+  transition: all 0.6s;
+  
+ }
+
+ .box:hover{
+  background-position: left bottom;
+ }
+ .box img{
+  width:100%;
+ }
+
+ .box img:hover{
+  scale: 1.06;
+ }
+
+ .box h5{
+  margin-top: 10px;
+  color: red;
+  font-size: 30px;
+  text-align: center;
+
+ }
+
+ .box h5:hover{
+  text-decoration: underline;
+ }
+
+ .box p{
+  text-align: justify;
+  font-style: inherit;
+ }
+
+ form{
+  width: 500px;
+  margin-left: 500px;
+
+ }
+
+ .input{
+  width: 100%;
+  margin: 10px;
+ }
+
+ button{
+  color: white;
+  background-color: black;
+  padding: 10px;
+  cursor: pointer;
+ }
+
+ .cv{
+  background-color: rgb(7, 132, 40);
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+  margin-left: 60%;
+  border-radius: 25%;
+ }
+
+ /* width */
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #aee6c7; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #760404; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000; 
+}
+footer p{
+  color: rgb(123, 71, 3);
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about, .footer-links, .footer-social {
+  flex: 1;
+  text-align: left;
+  margin: 20px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #63E6BE;
+  transform: scale(1.2);
+}
